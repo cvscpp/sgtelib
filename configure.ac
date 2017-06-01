@@ -1,4 +1,4 @@
-AC_INIT(sgtelib, 1.0.0, miroslav.shaltev@shaltev.de)
+AC_INIT(sgtelib, 3.8.1, miroslav.shaltev@shaltev.de)
 AC_PREREQ([2.63])
 AC_CONFIG_HEADERS([config.h])
 
