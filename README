@@ -3,8 +3,15 @@
 #                                    README                                    #
 #                                                                              #
 #------------------------------------------------------------------------------#
-#  NOMAD - Nonlinear Optimization by Mesh Adaptive Direct search -             #
-#          version 3.8.1                                                       #
+#  SGTELIB - Surrogate model library for Derivative-Free Optimization          #
+#            as found in NOMAD version 3.8.1                                   #
+#                                                                              #
+#                              DISCLAIMER                                      #
+#                                                                              #
+#  This version of SGTELIB has been separated from the official NOMAD release  #
+#  and modified to build using autotools. The license and copyright of the     #
+#  authors apply. I (miroslav.shaltev@shaltev.de) did the fork for my personal #
+#  need, use it on your own risk!                                              #
 #                                                                              #
 #  NOMAD - version 3.8.1 has been created by                                   #
 #                 Charles Audet        - Ecole Polytechnique de Montreal       #
@@ -44,63 +51,3 @@
 #                                                                              #
 #  You can find information on the NOMAD software at www.gerad.ca/nomad        #
 #------------------------------------------------------------------------------#
-
-
-DESCRIPTION :
-
-NOMAD is a C++ implementation of the Mesh Adaptive Direct Search (MADS)
-algorithm, designed for constrained optimization of black-box functions.
-
-
-WEB PAGE :
-
-https://www.gerad.ca/nomad/
-
-
-FURTHER INSTRUCTIONS :
-
-Please visit the web page for futher instruction on the following:
-
-* Downloading, configuring, compiling, and installing NOMAD
-* Using NOMAD and setting the parameters
-* Reports on NOMAD
-* How to report bugs and make enhancement requests
-* And more...
-
-
-BATCH OR LIBRARY MODE :
-
-NOMAD is designed to be used in two different modes : batch and library.
-The batch mode is intended for a basic and simple usage of the MADS method,
-while the library mode allows more flexibility.
-For example, in batch mode, users must define their separate black-box program,
-that will be called with system calls by NOMAD.
-In library mode, users can define their black-box function as C++ code
-that will be directly called by NOMAD, without system calls and temporary files.
-
-
-EXECUTABLES :
-
-On Windows and Mac OS X platforms, NOMAD batch mode executable is located in
-directory $NOMAD_HOME/bin or %NOMAD_HOME%\bin.
-In order to avoid compiling the code, you can simply use this executable.
-
-COMPILATION :
-
-On Linux, Unix, and Mac OS X, NOMAD can be compiled using the makefile located
-in $NOMAD_HOME/bin. Alternatively, using the script install.sh located in
-directory $NOMAD_HOME/install will install all NOMAD binaries.
-
-On Windows, NOMAD can be compiled using the Microsoft Visual Studio projet
-located in the %NOMAD_EXAMPLES%\VisualStudio directory.
-
-
-HOW TO EXECUTE NOMAD :
-
-For informations about the execution of NOMAD, please read the user guide :
-
-$NOMAD_HOME/doc/user_guide.pdf or %NOMAD_HOME%\doc\user_guide.pdf
-
-or
-
-https://www.gerad.ca/NOMAD/Downloads/user_guide.pdf
