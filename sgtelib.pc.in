@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libsgtelib
+Version: @VERSION@
+Description: sgtelib
+Libs: ${libdir}/libsgtelib.a -lc -lm
+Cflags: -I${includedir}/sgtelib

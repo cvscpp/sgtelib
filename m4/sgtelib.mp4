@@ -1,0 +1,6 @@
+# sgtelib.m4 - nomad specific autoconf macros
+
+AC_DEFUN([SGTELIB_ENABLE_MODULE],[
+AM_CONDITIONAL([$1],[test x$$2 = xtrue])
+eval $1_ENABLE_VAL="`eval test "$$2" = "true" && echo "ENABLED" || echo "DISABLED"`"
+])
