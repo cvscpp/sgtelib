@@ -18,7 +18,7 @@ if i
 else
     disp('=====================SGTELIB_SERVER ERROR==========================');
     disp('sgtelib_server not responding');
-    error('We tried to "ping" sgtelib (server), but it is off or not responding');
+    error('We tried to "ping" sgtelib_server, but it is off or not responding');
 end
 
 

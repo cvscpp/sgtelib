@@ -37,7 +37,7 @@ if keepopen
     verboseoption = ' -verbose ';
 end
 % command to start sgtelib.
-sgtelibcmd = [' ./sgtelib.exe -server -model ' model verboseoption];
+sgtelibcmd = [' sgtelib.exe -server -model ' model verboseoption];
 
 
 % Reset ld_library_path

@@ -1,4 +1,4 @@
 function sgtelib_server_stop
-disp('Kill sgtelib.exe');
+disp('Kill sgtelib_server.exe');
 !touch flag_quit
-%!killName sgtelib.exe
+%!killName sgtelib_server.exe

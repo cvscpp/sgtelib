@@ -5,7 +5,7 @@ disp('=========== EXPLORER =============');
 
 ! make -j 4
 
-model = 'TYPE ENSEMBLE PRESET SUPER1 WEIGHT SELECT METRIC RMSE '
+model = 'TYPE LOWESS DEGREE 1 KERNEL_SHAPE OPTIM METRIC OECV'
 
 f = @(x) cos(sqrt(4*x(:,1))).*cos(3*x(:,2))+(x(:,1)>0.5)+(x(:,2)>0.5);
 
@@ -16,6 +16,7 @@ P = 50;
 % Data points
 X = rand(P,2);
 Z = f(X);
+
 
 % Create model
 PP = 50;
@@ -36,7 +37,8 @@ plot3(X(:,1),X(:,2),Z,'ko','linewidth',3,'markersize',5);
 
 
 set(gca,'view',[-36 66]);
-
-
+zlim(bounds(ZZ));
+xlabel('x');
+ylabel('y');
 
 sgtelib_server_stop;
